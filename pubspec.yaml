@@ -1,0 +1,34 @@
+name: falling_blocks
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  firebase_auth: ^4.15.0
+  cloud_firestore: ^4.13.3
+  flame: ^1.11.0
+  google_fonts: ^6.1.0
+  flame_noise: ^0.1.1+9
+  firebase_core: ^2.24.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: AmaticSC
+      fonts:
+        - asset: fonts/AmaticSC-Bold.ttf
