@@ -101,7 +101,7 @@ class Heart extends PositionComponent with HasGameRef, CollisionCallbacks {
                 acceleration: getRandomSpaceDust(),
                 child: ComputedParticle(renderer: (c, particle) {
                   final paint = Paint()..color = myColor;
-                  paint.color = paint.color.withOpacity(1 - particle.progress);
+                  paint.color = paint.color.withValues(alpha: 1 - particle.progress);
                   c.drawPath(path, paint);
                 }))));
     explosion.scale = Vector2.all(explosion.scale.x / 1.5);

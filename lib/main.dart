@@ -12,8 +12,8 @@ void main() async {
   Flame.device.fullScreen();
   Flame.device.setPortrait();
 
-  dynamic authResult = await _authService.signInAnon();
-  print(authResult);
+ await _authService.signInAnon();
+  
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,

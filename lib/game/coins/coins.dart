@@ -118,7 +118,7 @@ class Coins extends PositionComponent with HasGameRef, CollisionCallbacks {
                 acceleration: getRandomSpaceDust(),
                 child: ComputedParticle(renderer: (c, particle) {
                   final paint = Paint()..color = type.myColor1!;
-                  paint.color = paint.color.withOpacity(1 - particle.progress);
+                  paint.color = paint.color.withValues(alpha: 1 - particle.progress);
                   c.drawRect(Rect.fromLTWH(pos.last[0], pos.last[1], size.x / 20, size.y / 20), paint);
                 }))));
 

@@ -4,7 +4,7 @@ import 'package:falling_blocks/game/game.dart';
 import 'package:falling_blocks/game/obstacle/obstacle_circle.dart';
 import 'package:falling_blocks/game/obstacle/obstacle_rect.dart';
 
-class ObstacleController extends Component with HasGameRef<UghGame> {
+class ObstacleController extends Component with HasGameReference<UghGame> {
   late Timer _timer;
   Random random = Random();
   List side = ["left", "center", "right"];

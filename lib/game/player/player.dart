@@ -13,7 +13,7 @@ import 'package:falling_blocks/game/player/life_bar.dart';
 import 'package:falling_blocks/widgets/game_over_menu.dart';
 import 'package:falling_blocks/widgets/pause_btn.dart';
 
-class Player extends PositionComponent with HasGameRef<UghGame>, CollisionCallbacks {
+class Player extends PositionComponent with HasGameReference<UghGame>, CollisionCallbacks {
   Color? playerColor = Colors.white;
   Life health;
 
@@ -147,7 +147,7 @@ class Player extends PositionComponent with HasGameRef<UghGame>, CollisionCallba
                 acceleration: getRandomSpaceDust(),
                 child: ComputedParticle(renderer: (c, particle) {
                   final paint = Paint()..color = playerColor!;
-                  paint.color = paint.color.withOpacity(1 - particle.progress);
+                  paint.color = paint.color.withValues(alpha: 1 - particle.progress);
                   c.drawRect(Rect.fromLTWH(x, y, size.x / 2, size.y / 2), paint);
                 }))));
 

@@ -12,7 +12,7 @@ class GameOverMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black.withOpacity(0.8),
+      backgroundColor: Colors.black.withValues(alpha: 0.8),
       body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Image.asset(
