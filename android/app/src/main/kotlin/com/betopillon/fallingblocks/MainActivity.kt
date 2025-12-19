@@ -1,4 +1,4 @@
-package com.example.falling_blocks
+package com.betopillon.fallingblocks
 
 import io.flutter.embedding.android.FlutterActivity
 

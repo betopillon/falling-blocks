@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383522207368",
+    "project_id": "falling-blocks-fc0e5",
+    "storage_bucket": "falling-blocks-fc0e5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383522207368:android:8ea02d37c45d85fa5e913d",
+        "android_client_info": {
+          "package_name": "com.betogames.fallingblocks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi0UwlCDc5vKIQq8WRxXnTuRT0ushqTEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
